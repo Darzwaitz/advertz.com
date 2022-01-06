@@ -1,0 +1,15 @@
+.header {
+  width: 100%;
+  //   background-color: yellow;
+  height: 100vh;
+  background-image: linear-gradient(
+      to left bottom,
+      rgba($primary-color-light, 0.3),
+      rgba($primary-color-light, 0.3)
+    ),
+    url(../../img/main-header-img-medium.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
