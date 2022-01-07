@@ -1,0 +1,20 @@
+.main-menu {
+  height: 7rem;
+  position: absolute;
+  margin-bottom: 2rem;
+  width: 100%;
+  font-size: 1.6rem;
+  background-color: rgba($color-white, 0.4);
+
+  &__logo-container {
+    width: 17rem;
+    height: 9rem;
+    background-color: rgba($color-white, 0.6);
+    border-bottom-left-radius: 1.8rem * 2.2;
+    border-bottom-right-radius: 1.8rem * 2.2;
+
+    position: absolute;
+    top: 7rem;
+    left: 5rem;
+  }
+}

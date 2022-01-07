@@ -7,9 +7,18 @@
       rgba($primary-color-light, 0.3),
       rgba($primary-color-light, 0.3)
     ),
-    url(../../img/main-header-img-medium.jpg);
+    url(../img/main-header-img-medium.jpg);
+  clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  position: relative;
+
+  &__title-box {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
