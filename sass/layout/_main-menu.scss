@@ -1,20 +1,73 @@
 .main-menu {
+  .logo {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
   height: 7rem;
   position: absolute;
   margin-bottom: 2rem;
   width: 100%;
   font-size: 1.6rem;
   background-color: rgba($color-white, 0.4);
+  color: $color-white;
 
   &__logo-container {
     width: 17rem;
     height: 9rem;
     background-color: rgba($color-white, 0.6);
-    border-bottom-left-radius: 1.8rem * 2.2;
-    border-bottom-right-radius: 1.8rem * 2.2;
+    border-bottom-left-radius: $bubble-size * 2.2;
+    border-bottom-right-radius: $bubble-size * 2.2;
 
     position: absolute;
     top: 7rem;
     left: 5rem;
+  }
+  &__menu-logo {
+    position: absolute;
+    @include center;
+    height: 5rem;
+    width: 13rem;
+    margin-top: -1rem;
+  }
+  &__logo--hidden {
+    visibility: hidden;
+    display: none;
+    height: 7rem;
+    width: 15rem;
+    margin-top: -5rem;
+  }
+  .menu {
+    float: right;
+    margin-right: 4rem;
+    margin-top: 1rem;
+
+    a {
+      display: block;
+      padding: 1.5rem;
+      // color: $color-white;
+      color: red;
+      text-decoration: none;
+    }
+  }
+  .menu ul {
+    list-style: none;
+    display: flex;
+    text-transform: uppercase;
+    margin-top: 1rem;
+
+    li {
+      &:not(:last-child) {
+        // border-right: 1px solid $color-grey-light-2;
+        border-right: 1px solid blue;
+      }
+    }
+    a {
+      text-decoration: none;
+    }
+
+    ul {
+      display: none;
+    }
   }
 }

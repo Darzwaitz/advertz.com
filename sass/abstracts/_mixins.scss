@@ -8,12 +8,12 @@
 //     }
 // }
 
-// @mixin center{
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%,-50%);
-// }
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 // MEDIA QUERY MANAGER
 /*
@@ -33,7 +33,7 @@
  - big-desktop
  */
 
- //ORDER of queriez: Base + typography > general layout + grid > page layout > componentz
+//ORDER of queriez: Base + typography > general layout + grid > page layout > componentz
 
 //  using em for media queries - em's rem's not affected in queries by route size
 // em's best option for media queriez

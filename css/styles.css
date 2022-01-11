@@ -102,16 +102,74 @@ body {
   width: 100%;
   font-size: 1.6rem;
   background-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+}
+
+.main-menu .logo {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 .main-menu__logo-container {
   width: 17rem;
   height: 9rem;
   background-color: rgba(255, 255, 255, 0.6);
-  border-bottom-left-radius: 3.96rem;
-  border-bottom-right-radius: 3.96rem;
+  border-bottom-left-radius: 9.9rem;
+  border-bottom-right-radius: 9.9rem;
   position: absolute;
   top: 7rem;
   left: 5rem;
+}
+
+.main-menu__menu-logo {
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 5rem;
+  width: 13rem;
+  margin-top: -1rem;
+}
+
+.main-menu__logo--hidden {
+  visibility: hidden;
+  display: none;
+  height: 7rem;
+  width: 15rem;
+  margin-top: -5rem;
+}
+
+.main-menu .menu {
+  float: right;
+  margin-right: 4rem;
+  margin-top: 1rem;
+}
+
+.main-menu .menu a {
+  display: block;
+  padding: 1.5rem;
+  color: red;
+  text-decoration: none;
+}
+
+.main-menu .menu ul {
+  list-style: none;
+  display: flex;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+.main-menu .menu ul li:not(:last-child) {
+  border-right: 1px solid blue;
+}
+
+.main-menu .menu ul a {
+  text-decoration: none;
+}
+
+.main-menu .menu ul ul {
+  display: none;
 }
 /*# sourceMappingURL=styles.css.map */
